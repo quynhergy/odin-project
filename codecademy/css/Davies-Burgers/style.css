@@ -103,8 +103,6 @@ body {
   
   ul.nutrition {
     padding: 20px;
-    padding: 10px 20px;
-    marginL 3px;
   }
   
   ul.nutrition li {
@@ -112,6 +110,8 @@ body {
     background-color: #05A8AA;
     list-style: none;
     width: 200px;
+    padding: 10px 20px;
+    margin: 3px;
   }
   
   .nutrition .category {
