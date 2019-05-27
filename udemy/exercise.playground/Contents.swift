@@ -1,5 +1,29 @@
 import Foundation
 
+// hello function
+
+func hello(_ name : String? = nil) -> String {
+    if let name = name {
+        return "Hello, \(name)!"
+    } else {
+        return "Hello, World!"
+    }
+}
+
+print(hello())
+
+// CLOSURE
+
+func calculator (n1: Int, n2: Int, operation: (Int, Int) -> Int) -> Int {
+    return operation(n1, n2)
+}
+
+print(calculator(n1: 1, n2: 4, operation: {$0 + $1}))
+print(calculator(n1: 1, n2: 4, operation: {$0 * $1}))
+
+let array = [6,2,3,9,4,1]
+print(array.map({$0+1}))
+
 // Calculator exercise
 
 var width: Float = 3.4
